@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY PORTFOLIO</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100..900&family=Montserrat:ital,wght@1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="ck.jpg">
+  <link rel="stylesheet" href="index.css">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-black text-white min-h-screen font-[Montserrat]">
+
+  <!-- Sélecteur FR|EN -->
+  <div class="fixed top-4 right-4 z-50 flex items-center space-x-2">
+    <button id="fr-btn" class="px-4 py-2 transition hover:text-red-600">FR</button>
+    <span class="text-white">|</span>
+    <button id="en-btn" class="px-4 py-2 transition hover:text-red-600">EN</button>
+  </div>
+
+  <!-- Section d'accueil -->
+  <section class="relative flex flex-col justify-center items-start h-screen px-10">
+    
+    <!-- Nom -->
+    <div class="text-left ml-10">
+      <h1 class="text-6xl font-extrabold italic">CAKPO</h1>
+      <h1 class="text-6xl font-extrabold italic mt-0">KENNETH</h1>
+    </div>
+
+    <!-- Icônes -->
+    <div class="flex gap-6 mt-3 text-red-600 text-5xl ml-10">
+      <a href="mailto:k.cakpo@ecole-ipssi.net" class="hover:text-red-400 hover:scale-110 transition-transform duration-300">
+        <i class="fa-solid fa-at"></i>
+      </a>
+      <a href="https://github.com/cKen-c" target="_blank" class="hover:text-red-400 hover:scale-110 transition-transform duration-300">
+        <i class="fa-brands fa-github"></i> 
+      </a>
+      <a href="https://www.linkedin.com/in/kenneth-c-aa774a253/" target="_blank" class="hover:text-red-400 hover:scale-110 transition-transform duration-300">
+        <i class="fa-brands fa-linkedin"></i> 
+      </a>
+    </div>
+
+    <!-- Flèche -->
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-6">
+      <a href="#quisuisje" class="animate-bounce">
+        <i class="fa-solid fa-chevron-down text-white text-2xl"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Navbar ronde fixe en bas -->
+  <div class="fixed bottom-20 left-1/2 transform -translate-x-1/2 z-50">
+    <nav class="whitespace-nowrap flex items-center space-x-2 bg-white bg-opacity-80 rounded-full p-2 shadow-lg">
+      <a id="nav-quisuisje" href="#quisuisje" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Qui suis-je ?</a>
+      <a id="nav-langages" href="#langages" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Langages / Outils</a>
+      <a id="nav-parcours" href="#parcours" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Parcours</a>
+      <a id="nav-veilles" href="#veilles" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Veilles</a>
+      <a id="nav-projets" href="#projets" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Projets</a>
+      <a id="nav-infos" href="#infos" class="px-4 py-2 rounded-full font-bold italic text-black hover:bg-red-600 hover:text-white transition">Infos</a>
+    </nav>
+  </div>
+
+  <!-- Sections -->
+  <section id="quisuisje" class="min-h-screen flex flex-col justify-center items-center bg- px-10 py-20">
+    <h2 id="quisuisje-title" class="fade-in text-4xl font-extrabold italic text-red-600 mb-6">Qui suis-je ?</h2>
+    <p id="quisuisje-txt" class="fade-in text-lg max-w-3xl text-center">
+      Je m'appelle Kenneth Cakpo, étudiant en BTS Services Informatiques aux Organisations Options SLAM (Solutions Logicielles et Applications Métiers), futur développeur passionné par la création de solutions technologiques innovantes et le numérique. 
+      J'ai développé des compétences en développement web, gestion de projets et administration système. 
+      Curieux, adaptable et doté d'un esprit d'équipe, je m'efforce toujours d'atteindre mes objectifs tout en cultivant la confiance en moi et une bonne gestion de la pression.
+      Je rêve de devenir un ingénieur en Software Engineering et de contribuer à des projets d'envergure. 
+    </p>
+  </section>
+
+  <section id="langages" class="min-h-screen flex flex-col justify-center items-center bg-black px-10 py-20">
+   <h2 id="langages-title" class="fade-in text-4xl font-extrabold italic text-red-600 mb-6">Langages / Outils</h2>
+
+    <p id="langages-txt" class="fade-in text-lg text-white text-center max-w-3xl mb-8">
+      Parmi ces langages et outils, certains font déjà partie de mon quotidien et j'en maîtrise l'utilisation, tandis que d'autres sont en cours d'apprentissage.
+      Je m'efforce de progresser constamment pour enrichir mes compétences et devenir plus polyvalent dans mes projets.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl w-full text-center">
+
+     <!-- Dev & Programmation -->
+     <div class="bg-black bg-opacity-50 p-6 rounded-2xl shadow-lg flex flex-wrap justify-center gap-6 text-5xl">
+      <i class="fa-brands fa-html5 text-orange-500 fade-in" title="HTML5"></i>
+      <i class="fa-brands fa-css3-alt text-blue-500 fade-in" title="CSS3"></i>
+      <i class="fa-brands fa-js text-yellow-500 fade-in" title="JavaScript"></i>
+      <img src="tailwind-svgrepo-com.png" alt="Tailwind CSS" class="w-14 h-14 fade-in" title="Tailwind CSS">
+      <i class="fa-brands fa-vuejs text-green-500 fade-in" title="Vue.js"></i>
+      <i class="fa-brands fa-php text-purple-500 fade-in" title="PHP"></i>
+      <i class="fa-solid fa-database text-orange-500 fade-in" title="MySQL"></i>
+      <i class="fa-brands fa-react text-blue-500 fade-in" title="React"></i>
+      <i class="fa-solid fa-c text-blue-500 fade-in" title="Langage C"></i> <!-- Pas dispo directement sur FA -->
+     </div>
+
+     <!-- Outils & Environnements -->
+     <div class="bg-black bg-opacity-50 p-6 rounded-2xl shadow-lg flex flex-wrap justify-center gap-6 text-5xl">
+      <img src="vscode-svgrepo-com.png" alt="VS Code" class="w-14 h-14 fade-in" title="VS Code">
+      <i class="fa-brands fa-github fade-in" title="GitHub"></i>
+      <img src="xampp-svgrepo-com.png" alt="XAMPP" class="w-14 h-14 fade-in" title="XAMPP">
+      <i class="fa-solid fa-terminal text-blue-500 fade-in" title="PowerShell"></i>
+      <i class="fa-solid fa-box text-gray-500 fade-in" title="VirtualBox"></i>
+      <i class="fa-brands fa-windows text-blue-500 fade-in" title="Windows"></i>
+      <i class="fa-brands fa-linux text-white-500 fade-in" title="Linux"></i>
+     </div>
+
+     <!-- Design & Webmarketing -->
+     <div class="bg-black bg-opacity-50 p-6 rounded-2xl shadow-lg flex flex-wrap justify-center gap-6 text-5xl">
+      <img src="figma-svgrepo-com.png" alt="Figma" class="w-14 h-14 fade-in" title="Figma">
+      <img src="canva-svgrepo-com.png" alt="Canva" class="w-14 h-14 fade-in" title="Canva">
+     </div>
+    </div>
+ </section>
+
+<!-- ...existing code... -->
+<section id="parcours" class="min-h-screen flex flex-col justify-center items-center bg-black px-10 py-20">
+  <h2 id="parcours-title" class="fade-in text-4xl font-extrabold italic text-red-600 mb-12">Parcours</h2>
+  <div class="relative w-full max-w-2xl mx-auto">
+    <!-- Ligne verticale rouge -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-600"></div>
+    
+    <!-- Timeline items -->
+    <div class="flex flex-col gap-12">
+      <!-- 2024 -->
+      <div class="relative flex items-center fade-in hover:-translate-y-1 transition-all duration-300">
+        <div class="w-1/2 text-right pr-8">
+          <span class="font-bold">Avril 2025 - Juin 2025</span>
+          <p class="text-white">Stage Free S-COOL</p>
+          <p class="text-red-400">Développeur Frontend</p>
+        </div>
+        <!-- Point avec bordure blanche -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+          <div class="w-4 h-4 bg-red-600 rounded-full"></div>
+        </div>
+        <div class="w-1/2 pl-8"></div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="relative flex items-center fade-in hover:-translate-y-1 transition-all duration-300">
+        <div class="w-1/2 text-right pr-8"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+          <div class="w-4 h-4 bg-red-600 rounded-full"></div>
+        </div>
+        <div class="w-1/2 pl-8">
+          <span class="font-bold">Octobre 2024 - En cours</span>
+          <p class="text-white">Étudiant en BTS SIO (SLAM)</p>
+          <p class="text-red-400">2ème Année Développement FullStack</p>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="relative flex items-center fade-in hover:-translate-y-1 transition-all duration-300">
+        <div class="w-1/2 text-right pr-8">
+          <span class="font-bold">Septembre 2022 - Juin 2024</span>
+          <p class="text-white">Classe Préparatoire intégrée</p>
+          <p class="text-red-400">Ecole d'ingénieur ESIEA</p>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+          <div class="w-4 h-4 bg-red-600 rounded-full"></div>
+        </div>
+        <div class="w-1/2 pl-8"></div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="relative flex items-center fade-in hover:-translate-y-1 transition-all duration-300">
+        <div class="w-1/2 text-right pr-8"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+          <div class="w-4 h-4 bg-red-600 rounded-full"></div>
+        </div>
+        <div class="w-1/2 pl-8">
+          <span class="font-bold">2021 - 2022</span>
+          <p class="text-white">Obtention Baccalauréat Générale</p>
+          <p class="text-red-400">Spécialité Mathématiques et Physique Chimie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ...existing code... -->
+
+<section id="veilles" class="min-h-screen flex flex-col justify-center items-center bg-black px-10 py-20">
+   <h2 id="veilles-title" class="fade-in text-4xl font-extrabold italic text-red-600 mb-6">Veilles</h2> 
+   <p id="veilles-txt" class="fade-in text-lg max-w-3xl text-center"> La veille technologique est une activité de surveillance continue qui permet de suivre les avancées et les innovations dans le domaine de l’informatique et du développement web. 
+    Elle a pour objectif de détecter les nouvelles tendances, outils et pratiques afin d’anticiper les évolutions, d’améliorer ses compétences et de rester compétitif dans un secteur en constante évolution.
+     Pour cela, j’utilise différents moyens comme les flux RSS, les réseaux sociaux comme LinkedIn et Twitter/X, des Youtubeurs comme <a href="https://www.youtube.com/@theicollection" target="_blank" class="text-red-400 font-bold hover:text-red-500 ">TheiCollection</a>, <a href="https://www.youtube.com/@stevenlathoud" target="_blank" class="text-red-400 font-bold hover:text-red-500">Steven</a>, <a href="https://www.youtube.com/@jojol" target="_blank" class="text-red-400 font-bold hover:text-red-500">Jojol</a>.
+    </p>
+    <div id="neuralink-gallery" class="w-full overflow-x-hidden py-10">
+      <h3 class="text-2xl font-bold text-red-600 mb-6 text-left"> Neuralink : <span class="text-red-600 font-semibold">Révolution des Interfaces Cerveau-Machine</span> </h3>
+      <div class="flex gap-8 animate-scroll-x w-max">
+        <img src="neuralink1.png" alt="Neuralink slide 1" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink2.png" alt="Neuralink slide 2" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink3.png" alt="Neuralink slide 3" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink4.png" alt="Neuralink slide 4" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink5.png" alt="Neuralink slide 5" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink6.png" alt="Neuralink slide 6" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+        <img src="neuralink7.png" alt="Neuralink slide 7" class="neuralink-img rounded-xl shadow-lg h-[40vh] w-auto object-cover cursor-pointer transition-transform duration-300 hover:scale-105" />
+      </div>
+    </div>
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+      <img id="lightbox-img" src="" alt="Agrandissement" class="max-w-3xl max-h-[80vh] rounded-xl shadow-2xl" />
+    </div>
+  </section>
+
+<section id="projets" class="min-h-screen flex flex-col justify-center items-center bg-black px-10 py-20"> 
+  <h2 class="text-4xl font-extrabold italic text-red-600 mb-6">Projets</h2> 
+  <p class="fade-in text-lg text-white text-center max-w-3xl mb-12">
+     Mon parcours s’articule autour d’un apprentissage constant dans le domaine de l’informatique, avec un accent sur le développement web et logiciel.
+        J’ai acquis des compétences techniques solides et une rigueur professionnelle grâce à mes études et mes expériences de projets. D'autres projets sont en cours de développement...
+  </p>
+
+  <!-- Grid de projets -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
+    
+    <!-- Carte Free S-COOL -->
+    <div class="fade-in bg-gray-300 rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300">
+      <div class="relative overflow-hidden h-48">
+        <img src="fscool1.png" alt="Free S-COOL" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      </div>
+      <div class="p-5">
+        <h3 class="text-xl text-red-600 font-bold mb-2">Free S-COOL</h3>
+        <p class="text-black text-sm mb-4">Plateforme éducative collaborative</p>
+        <div class="flex justify-between items-center">
+          <a href="https://github.com/cKen-c/armory" target="_blank" class="text-black hover:text-red-600 transition-colors">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a href="https://your-deployment-url.vercel.app" target="_blank" 
+             class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+            Voir le site
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte App Météo -->
+    <div class="fade-in bg-gray-300 rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300">
+      <div class="relative overflow-hidden h-48">
+        <img src="appmeteo.png" alt="App Météo" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"> </div>
+      </div>
+      <div class="p-5">
+        <h3 class="text-xl text-red-600 font-bold mb-2">App Météo</h3>
+        <p class="text-black text-sm mb-4">Application météo en temps réel</p>
+        <div class="flex justify-between items-center">
+          <a href="https://github.com/cKen-c/appmeteo" target="_blank" class="text-black hover:text-red-600 transition-colors">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a href="https://your-deployment-url.vercel.app" target="_blank" 
+             class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+            Voir le site
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte Pokedex -->
+    <div class="fade-in bg-gray-300 rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300">
+      <div class="relative overflow-hidden h-48">
+        <img src="pokedex.png" alt="Pokedex" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+      <div class="p-5">
+        <h3 class="text-xl text-red-600 font-bold mb-2">Pokedex</h3>
+        <p class="text-black text-sm mb-4">Application Pokémon interactive</p>
+        <div class="flex justify-between items-center">
+          <a href="https://github.com/cKen-c/pokedex" target="_blank" class="text-black hover:text-red-600 transition-colors">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a href="https://pokedex-reir.vercel.app/" target="_blank" 
+             class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+            Voir le site
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte ToDoApp -->
+    <div class="fade-in bg-gray-300 rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300">
+      <div class="relative overflow-hidden h-48">
+        <img src="todoapp.png" alt="ToDoApp" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+      <div class="p-5">
+        <h3 class="text-xl text-red-600 font-bold mb-2">ToDoApp</h3>
+        <p class="text-black text-sm mb-4">Application de gestion des tâches</p>
+        <div class="flex justify-between items-center">
+          <a href="https://github.com/cKen-c/CAKPO_Kenneth_Symfony_eval" target="_blank" class="text-black hover:text-red-600 transition-colors">
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a href="https://your-deployment-url.vercel.app" target="_blank" 
+             class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+            Voir le site
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="infos" class="fade-in min-h-screen flex flex-col justify-center items-center bg-black-900 px-10 py-20"> 
+  <h2 class="text-4xl font-extrabold italic text-red-600 mb-6">Infos</h2> 
+  <p class="fade-in text-lg max-w-3xl text-center">
+    Le BTS SIO (Services Informatiques aux Organisations) est un diplôme français de niveau Bac+2 qui forme des professionnels capables de concevoir, 
+    développer et gérer des solutions informatiques adaptées aux besoins des entreprises.
+    Ce BTS propose deux options : SLAM (Solutions Logicielles et Applications Métiers), axée sur le développement d’applications et de logiciels  
+    et SISR (Solutions d’Infrastructure, Systèmes et Réseaux), centrée sur l’administration des systèmes et des réseaux informatiques.</p>
+    <p class="fade-in text-lg max-w-3xl text-center"> <span class='font-bold'>Débouchés SLAM :</span> développeur web, développeur d’applications mobiles, intégrateur logiciel.</p>
+    <p class="fade-in text-lg max-w-3xl text-center"> <span class='font-bold'>Débouchés SISR :</span> administrateur système et réseau, technicien support, consultant en infrastructures informatiques.</p>
+</section> 
+
+<footer class="text-center py-6 bg-red-600"> 
+  <p class="text-sm">© 2023 Kenneth Cakpo. Tous droits réservés.</p> 
+</footer>
+<script src="index.js"></script>
+</body>
