@@ -1,0 +1,68 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1rem)); /* moitié + gap */
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll 30s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll-x:hover {
+  animation-play-state: paused;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Side scroll bar navigation chic (mobile uniquement) */
+#side-scroll-nav {
+  position: fixed;
+  top: 50%;
+  right: 5px; /* passe à droite */
+  left: auto;
+  transform: translateY(-50%);
+  z-index: 50;
+  height: 320px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+#side-scroll-nav .nav-track {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px; /* plus fin */
+  height: 100%;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+#side-scroll-nav .nav-indicator {
+  position: absolute;
+  left: 50%;
+  width: 4px; /* plus fin */
+  height: 32px; /* plus fin et plus court */
+  background: #e11d48;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: top 0.3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 2px 8px rgba(225,29,72,0.15);
+}
+
